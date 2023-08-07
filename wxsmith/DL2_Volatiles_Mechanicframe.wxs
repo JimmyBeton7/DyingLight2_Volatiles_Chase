@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="DL2_Volatiles_MechanicFrame">
+		<size>1200,600</size>
+		<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+			<pos>24,0</pos>
+			<size>1200,600</size>
+			<handler function="OnPanel1Paint" entry="EVT_PAINT" />
+			<handler function="OnPanel1LeftDown" entry="EVT_LEFT_DOWN" />
+			<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+				<label>Start</label>
+				<pos>1072,8</pos>
+				<handler function="OnButton1Click" entry="EVT_BUTTON" />
+			</object>
+		</object>
+		<object class="wxTimer" name="ID_TIMER1" variable="TimerPlayer" member="yes">
+			<interval>100</interval>
+			<handler function="OnTimerPlayerTrigger" entry="EVT_TIMER" />
+		</object>
+		<object class="wxTimer" name="ID_TIMER2" variable="TimerVolatile1" member="yes">
+			<handler function="OnTimerVolatile1Trigger" entry="EVT_TIMER" />
+		</object>
+		<object class="wxTimer" name="ID_TIMER3" variable="TimerVolatile2" member="yes">
+			<handler function="OnTimerVolatile2Trigger" entry="EVT_TIMER" />
+		</object>
+		<object class="wxTimer" name="ID_TIMER4" variable="TimerVolatile3" member="yes">
+			<handler function="OnTimerVolatile3Trigger" entry="EVT_TIMER" />
+		</object>
+	</object>
+</wxsmith>
